@@ -34,7 +34,7 @@
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Md saiful islam</span></h1>
+			            <h1 class="mb-4 mt-3">I'm <span>Mdsaiful islam</span></h1>
 			            <h2 class="mb-4">A Freelance Web Designer</h2>
 			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
@@ -80,10 +80,11 @@
 		            <h2 class="mb-4">About Me</h2>
 		            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span></span></li>
+		            	<li class="d-flex"><span>Name:mdsiful islamn</span> <span></span></li>
 		            	<li class="d-flex"><span>Date of birth:</span> <span>January 01, 1987</span></li>
+						<li class="d-flex"><span>height:</span> <span>5.5</span></li>
 		            	<li class="d-flex"><span>Address:</span> <span>San Francisco CA 97987 USA</span></li>
-		            	<li class="d-flex"><span>Zip code:</span> <span>1000</span></li>
+		            	
 		            	<li class="d-flex"><span>Email:</span> <span>clarkthomp@gmail.com</span></li>
 		            	<li class="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li>
 		            </ul>
