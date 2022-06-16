@@ -2,10 +2,11 @@
 @section('content')
 
 <div class="container">
+  <a class="btn btn-success" href="{{url('adminpalen')}}"></a>
 <div class="jumbotron">
     <h1 class="text-success text-center"> Enter your infomation </h1>
-    <form class="text-success" action="" method="post" enctype="multipart/form-data">
-  
+    <form class="text-success" action="{{ url('aboutinsert') }}" method="post" enctype="multipart/form-data">
+      @csrf
     
         <div class="mb-3">
             <label class="form-label"> Your name</label>

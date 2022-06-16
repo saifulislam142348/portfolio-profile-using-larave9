@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\admincontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,12 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/a', function () {
+Route::get('/admin', function () {
     return view('adminpalen');
 });
-Route::get('/b', function () {
-    return view('pages/aboutcreate');
-});
-Route::get('/c', function () {
-    return view('pages/aboutlist');
-});
+
+
+
+
+
+
+route::get('/aboutinsert',[admincontroller::class,'aboutinsert']);
+route::post('/aboutinsert',[admincontroller::class,'aboutstore']);

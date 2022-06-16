@@ -34,7 +34,7 @@
                   </div>
                 <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user text-success">About</span></a>
     <ul class="dropdown-menu">
-      <li><a class="nav-link" href="#"><span class="glyphicon glyphicon-education text-success">Create</
+      <li><a class="nav-link" href="{{url('aboutinsert')}}"><span class="glyphicon glyphicon-education text-success">Create</
       <li><a class="nav-link " href="#"><span class="glyphicon glyphicon-education text-success">List</span></a></li>
     </ul>
   </div>
