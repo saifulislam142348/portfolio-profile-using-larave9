@@ -6,9 +6,68 @@ use Illuminate\Http\Request;
 
 class admincontroller extends Controller
 {
-    public function aboutinsert(){
+
+
+
+    public function about(){
 
         return view('pages\aboutcreate');
+    }
+    public function aboutlist(){
+
+        return view('pages\aboutlist');
+    }
+    public function blog(){
+
+        return view('pages\blogcreate');
+    }
+    public function bloglist(){
+
+        return view('pages\bloglist');
+    }
+    public function contact(){
+
+        return view('pages\contact');
+    }
+    public function home(){
+
+        return view('pages\homecreate');
+    }
+    public function homelist(){
+
+        return view('pages\homelist');
+    }
+    public function project(){
+
+        return view('pages\projectcreate');
+    }
+    public function projectlist(){
+
+        return view('pages\projectlist');
+    }
+    public function resume(){
+
+        return view('pages\resumecreate');
+    }
+    public function resumelist(){
+
+        return view('pages\resumelist');
+    }
+    public function service(){
+
+        return view('pages\servicescreate');
+    }
+    public function servicelist(){
+
+        return view('pages\serviceslist');
+    }
+    public function skill(){
+
+        return view('pages\skillcreate');
+    }
+    public function skilllist(){
+
+        return view('pages\skilllist');
     }
 
     public function aboutstore(Request $request){

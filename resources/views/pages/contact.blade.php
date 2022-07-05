@@ -1,69 +1,107 @@
-@extends('layout.layout')
-@section('content')
 
-<div class="container">
-<div class="jumbotron">
-    <h1 class="text-success text-center"> Enter your infomation </h1>
-    <form class="text-success">
-  
+    @extends('layout.layout')
+    @section('content')
+        <div class="jumbotron bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="jumbotron">
+                            <div class="list-group bg-dark">
+                                <a href="" class="list-group-item active "> <i class=" text-success"></i> Dashboard </a>
+                                <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary"
+                                        data-toggle="dropdown" href=""><span class=" text-success">Home </span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="{{ route('home') }}"><span class=" text-success">create
+                                                    </ <li><a class="nav-link " href="{{ route('homelist') }}"><span
+                                                            class=" text-success">list</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary"
+                                        data-toggle="dropdown" href="#"><span class=" text-success">About</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="{{ route('about') }}"><span class=" text-success">Create
+                                                    </ <li><a class="nav-link " href="{{ route('aboutlist') }}"><span
+                                                            class=" text-success">List</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary"
+                                        data-toggle="dropdown" href="#"><span class=" text-success">Resume </span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="{{ route('resume') }}"><span class="text-success">Create
+                                                    </ <li><a class="nav-link " href="{{ route('resumelist') }}"><span
+                                                            class=" text-success">List</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary"
+                                        data-toggle="dropdown" href="#"><span class=" text-success">Services</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="{{ route('service') }}"><span
+                                                    class="n text-success">Create</ <li><a class="nav-link "
+                                                        href="{{ route('servicelist') }}"><span
+                                                            class=" text-success">List</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary"
+                                        data-toggle="dropdown" href="#"><span class=" text-success">Skills</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="{{ route('skill') }}"><span class=" text-success">Create
+                                                    </ <li><a class="nav-link " href="{{ route('skilllist') }}"><span
+                                                            class=" text-success">List</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary"
+                                        data-toggle="dropdown" href="#"><span class=" text-success">Projects</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="{{ route('project') }}"><span
+                                                    class=" text-success">Create</ <li><a class="nav-link "
+                                                        href="{{ route('projectlist') }}"><span
+                                                            class=" text-success">List</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown"><a class="dropdown-toggle list-group-item text-primary"
+                                        data-toggle="dropdown" href="#"><span class=" text-success">My blogs</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="{{ route('blog') }}"><span class=" text-success">Create
+                                                    </ <li><a class="nav-link " href="{{ route('bloglist') }}"><span
+                                                            class=" text-success">List</span></a></li>
+                                    </ul>
     
-        <div class="mb-3">
-            <label class="form-label"> Your name</label>
-            <input type="text" class="form-control" >
-            <div class="form-text">We'll never share your name with anyone else.</div>
-          </div>
-            <div class="mb-3">
-                <label class="form-label">Date of birth:</label>
-                <input type="date" class="form-control" >
-                <div  class="form-text">We'll never share your birth date with anyone else.</div>
-              </div>
-              <div class="mb-3">
-          <label class="form-label">Your height</label>
-          <input type="text" class="form-control" >
-          <div class="form-text">We'll never share your with anyone else.</div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Email address</label>
-            <input type="email" class="form-control" >
-            <div id="emailHelp" class="form-text">We'll never share your with anyone else.</div>
-          </div>
-         
-          <div class="mb-3">
-            <label class="form-label">Your Adrress:</label>
-            <input type="text" class="form-control" >
-            <div  class="form-text">We'll never share your with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Your phone number:</label>
-            <input type="text" class="form-control" >
-            <div  class="form-text">We'll never share your phone number with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Title:</label>
-            <input type="text" class="form-control" >
-            <div  class="form-text">We'll never share your Title with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Description:</label>
-            <input type="text" class="form-control" >
-            <div  class="form-text">We'll never share your  Description with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Your Image:</label>
-            <input type="file" class="form-control" >
-            <div  class="form-text">We'll never share your image with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">your cv upload:</label>
-            <input type="file" class="form-control" >
-            <div  class="form-text">We'll never share your with anyone else.</div>
-          </div>
-        <input type="submit" class="btn btn-primary" value="submit">
-      </form>
-</div>
-   
-</div>
-
-
-
-@endsection
+                                    <a href="{{ route('contact') }}" class="list-group-item text-success"><i
+                                            class=" text-success"></i> Contact </a>
+                                </div>
+    
+    
+    
+    
+    
+    
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="jumbotron ">
+                            <div class="container">
+    
+                                <div class="jumbotron text-primary">
+                                    <table class="table">
+                                        <thead class="text-center">
+                                            <h1 class="text-danger">Table data show </h1>
+                                        </thead>
+                                        <tbody>
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        @endsection
+    
+    
+    
